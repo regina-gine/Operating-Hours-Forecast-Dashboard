@@ -67,7 +67,7 @@ Dashboard
 
 ## Data Import Workflow
 
-![Data Import](screenshots/data-import.png)
+![Data Import Workflow](screenshots/import-workflow.png)
 
 Actual operating-hour records can be imported from an external Excel source file using a VBA-assisted import workflow.
 
@@ -79,7 +79,7 @@ The imported records are used to determine the latest actual operating date and 
 
 ## Date-Effective Operating Schedule
 
-![Operating Schedule](screenshots/operating-schedule.png)
+![Operating Schedule Management](screenshots/schedule-management.png)
 
 The tool supports changes in operating conditions over time.
 
