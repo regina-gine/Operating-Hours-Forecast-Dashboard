@@ -1,0 +1,17 @@
+# Working Excel files
+dashboard/
+sample-data/
+
+# Excel temporary files
+~$*.xlsm
+~$*.xlsx
+
+# Windows system files
+desktop.ini
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store

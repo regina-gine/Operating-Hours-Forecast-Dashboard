@@ -1,0 +1,14 @@
+Operating Hours & 10,000-Hour Forecast Dashboard
+
+Portfolio project by Regina Grace.
+
+This repository is provided for portfolio demonstration and
+professional evaluation purposes.
+
+The complete working Excel workbook, VBA automation, formulas,
+and implementation files are not included in this public repository.
+
+Screenshots and documentation may not be reproduced, redistributed,
+or used commercially without permission.
+
+© 2026 Regina Grace. All rights reserved.
