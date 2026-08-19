@@ -20,7 +20,7 @@ The expected completion date can change when:
 - maintenance periods are introduced; or
 - new actual operating data becomes available.
 
-This dashboard was developed to account for these changing conditions while preserving historical operating schedules and automatically recalculating the forecast.
+This tool was developed to account for these changing conditions while preserving historical operating schedules and automatically recalculating the forecast.
 
 ---
 
@@ -28,16 +28,24 @@ This dashboard was developed to account for these changing conditions while pres
 
 ![Operating Hours Dashboard](screenshots/dashboard.png)
 
-The dashboard provides a consolidated view of:
+The dashboard presents the operating-hour forecast through a consolidated milestone-planning view.
 
-- latest actual operating date;
+Key information includes:
+
 - cumulative actual operating hours;
 - remaining hours to the 10,000-hour target;
 - percentage progress toward the target;
-- current operating schedule; and
-- estimated 10,000-hour milestone completion date.
+- current weekly operating capacity;
+- planned lost operating hours;
+- projected 10,000-hour milestone date;
+- forecast trajectory against the target;
+- current operating plan;
+- downtime impact; and
+- milestone outlook.
 
-The forecast automatically recalculates when actual operating data, operating schedules, or planned downtime are updated.
+The dashboard is designed to provide both a high-level progress summary and visibility into the operating assumptions affecting the forecast.
+
+The projected milestone automatically recalculates when actual operating data, operating schedules, or planned downtime are updated.
 
 ---
 
@@ -71,7 +79,7 @@ Dashboard
 
 Actual operating-hour records can be imported from an external Excel source file using a VBA-assisted import workflow.
 
-This reduces repetitive manual entry and allows the dashboard to be updated as new operating data becomes available.
+This reduces repetitive manual entry and allows the monitoring tool to be updated as new operating data becomes available.
 
 The imported records are used to determine the latest actual operating date and calculate the cumulative operating hours achieved to date.
 
@@ -105,6 +113,8 @@ During these periods, forecast operating hours are adjusted accordingly.
 
 This allows the projected 10,000-hour milestone date to account for known future interruptions rather than assuming uninterrupted operation.
 
+The dashboard also summarizes the impact of planned lost operating hours on the current forecast.
+
 ---
 
 ## Forecasting Logic
@@ -123,6 +133,8 @@ The model evaluates future operating dates until the remaining required operatin
 
 The corresponding date becomes the estimated 10,000-hour milestone completion date displayed on the dashboard.
 
+A forecast trajectory provides a visual comparison between projected cumulative operating hours and the 10,000-hour target.
+
 Exact formulas, VBA procedures, and detailed calculation logic are intentionally excluded from the public repository.
 
 ---
@@ -134,10 +146,13 @@ Exact formulas, VBA procedures, and detailed calculation logic are intentionally
 - 10,000-hour milestone monitoring
 - Percentage progress tracking
 - Automatic remaining-hours calculation
+- Forecast trajectory visualization
+- Current operating-capacity monitoring
 - Date-effective operating schedule changes
 - Variable operating hours per day
 - Variable operating days per week
 - Planned shutdown and maintenance handling
+- Planned lost-hours monitoring
 - Dynamic milestone-date forecasting
 - VBA-assisted data import
 - Dashboard-based reporting
@@ -152,7 +167,7 @@ The complete working version contains dedicated worksheets for different parts o
 | Worksheet | Purpose |
 |---|---|
 | How to Use | User instructions and workflow guidance |
-| Dashboard | Main monitoring and forecast view |
+| Dashboard | Main monitoring and milestone forecast view |
 | Inputs | Core calculation inputs and current operating status |
 | Import Data | Imported actual operating-hour records |
 | Operating Schedule | Date-effective operating schedule configuration |
@@ -194,7 +209,7 @@ The repository is intended to demonstrate the project's functionality, design, w
 
 ## Data Privacy
 
-All screenshots and examples presented in this portfolio project use demonstration data.
+All screenshots and examples presented in this portfolio project use synthetic demonstration data.
 
 No confidential company, client, project, or operational information is included.
 
